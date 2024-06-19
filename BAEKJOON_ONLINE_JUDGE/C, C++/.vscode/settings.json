@@ -12,6 +12,10 @@
         "string_view": "cpp",
         "initializer_list": "cpp",
         "regex": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "random": "cpp",
+        "bitset": "cpp",
+        "utility": "cpp",
+        "ostream": "cpp"
     }
 }

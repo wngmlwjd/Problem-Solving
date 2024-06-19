@@ -1,28 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-map<int, int> input;
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int N, n;
+    int N;
+    vector<int> input;
 
     cin >> N;
+    input.assign(N, 0);
     for(int i = 0;i < N;i++) {
-        cin >> n;
-
-        input[n]++;
+        cin >> input[i];
     }
 
-    cin >> N;
-    for(int i = 0;i < N;i++) {
-        cin >> n;
+    sort(input.begin(), input.end());
 
-        cout << input[n] << ' ';
-    }
+    cout << input.front() * input.back();
 
     return 0;
 }
